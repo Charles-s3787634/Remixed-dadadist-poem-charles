@@ -54,7 +54,7 @@
     <div id="poem"></div>
     <!-- script -->
     <script>
-      const article = `In the right hands, these surgeries often have great outcomes. If you’re feeling worried, ask your doctor or surgeon questions beforehand. Here’s a breakdown of what adds to their complexity: Surgeons consider an abdominal operation complex if a patient has current or past medical issues. These could include previous abdominal surgeries, a history of hernias or conditions such as diabetes, heart disease, lung disease or kidney disease. Patients who enter surgery with pre-existing conditions are at an increased risk for complications during surgery, so other precautions may need to be taken.These surgeries frequently take a long time to perform due to extensive scar tissue inside a patient’s abdomen. Some patients require high levels of care afterward, perhaps even a stay in the intensive care unit. These procedures also are associated with higher risks for infection, blood loss and poor wound healing.`;
+      const article = `in the right hands these surgeries often have great outcomes if you’re feeling worried ask your doctor or surgeon questions beforehand here’s a breakdown of what adds to their complexity surgeons consider an abdominal operation complex if a patient has current or past medical issues these could include previous abdominal surgeries a history of hernias or conditions such as diabetes heart disease lung disease or kidney disease patients who enter surgery with pre-existing conditions are at an increased risk for complications during surgery so other precautions may need to be taken these surgeries frequently take a long time to perform due to extensive scar tissue inside a patient’s abdomen some patients require high levels of care afterward perhaps even a stay in the intensive care unit these procedures also are associated with higher risks for infection blood loss and poor wound healing`;
       const button = document.getElementById("new-poem");
       function shuffleWords(list) {
         return list
@@ -76,7 +76,7 @@
       function assemblePoem(articleWords) {
         let lineText = "";
         for (const [counter, word] of articleWords.entries()) {
-          if ((counter + 1) % 5 == 0) {
+          if ((counter + 1) % 4 == 0) {
             addLine(lineText);
             lineText = "";
           } else {
